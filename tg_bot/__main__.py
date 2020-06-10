@@ -18,24 +18,24 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
 Hi {}, my name is {}! 
-I am an Anime themed group management bot with some fun extras [;)](https://telegra.ph/file/095d7e696096e21b06447.jpg)
+I am an Anime themed group management bot with some fun extras. 
 
 You can find the list of available commands with /help.
 
-[Kigyō's Repo](https://github.com/Dank-del/EnterpriseALRobot) 
+Special Thanks To [This Noob](https://t.me/Unknown_Hacker_X) . 
 
-The support group chat is at @YorktownEagleUnion
+The support group chat is at @Goku_GroupBot_Support
 """
 
 HELP_STRINGS = """
 Hey there! My name is *{}*.
-I'm a part of [Eagle Union](https://telegra.ph/file/095d7e696096e21b06447.jpg)
+I'm a part of [Lone Wolf](https://telegram.me/Lone_wolf_robot)
 
 Have a look at the following for an idea of some of \
 the things I can help you with.
 
-AI and blacklist module from [TheRealPhoenixBot](https://github.com/rsktg/TheRealPhoenixBot.git)
-Source code from [SaitamaRobot](https://github.com/AnimeKaizoku/SaitamaRobot)
+AI and blacklist module from [Unknown Hacker X](https://t.me/Unknown_Hacker_X)
+Support Chat  [Goku Support Chat](https://t.me/Goku_GroupBot_Support)
 
 *Main* commands available:
  - /start: start the bot
@@ -52,12 +52,12 @@ And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
 
-KIGYO_IMG = "https://telegra.ph/file/e5100e06c03767af80023.jpg"
+KIGYO_IMG = "https://telegra.ph/Goku-06-10"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
-Kigyō is hosted on one of Kaizoku's Servers and doesn't require any donations as of now but \
-You can donate to the original writer of the Base code, Paul
-There are two ways of supporting him; [PayPal](paypal.me/PaulSonOfLars), or [Monzo](monzo.me/paulnionvestergaardlarsen)."""
+Goku is hosted on one of Unknown Hacker X's Servers and doesn't require any donations as of now but \
+You can donate to the original writer of the Base code, Unknown Hacker X
+Contact [Unknown Hacker X](https://t.me/Unknown_Hacker_X) for Donating."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -150,7 +150,7 @@ def start(bot: Bot, update: Update, args: List[str]):
                 parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="Add Kigyō to your group",
                                                                        url="t.me/{}?startgroup=true".format(bot.username))]]))
     else:
-        update.effective_message.reply_text("Yo, whadup?")
+        update.effective_message.reply_text("Yo, I'm Alive. Any Questions? hit /help .")
 
 
 # for test purposes
